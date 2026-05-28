@@ -17,9 +17,9 @@ var currentTime = new Date()
   var hours = currentTime.getHours()
   var minutes = currentTime.getMinutes()
 
-  var suffix = "WIT";
+  var suffix = "WIB";
   if (hours >= 12) {
-  suffix = "WIB";
+  suffix = "WIT";
   hours = hours - 12;
   }
   if (hours == 0) {
