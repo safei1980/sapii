@@ -1,6 +1,6 @@
-  <span id='clock'/>
 <script type='text/javascript'>
 <!--
+ function showTime() {
 now = new Date();
 if (now.getTimezoneOffset() == 0) (a=now.getTime() + ( 7 *60*60*1000))
 else (a=now.getTime());
@@ -13,7 +13,8 @@ var hariarray=new Array("Minggu","Senin",
 "Selasa","Rabu","Kamis","Jum'at","Sabtu")
 var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember")
 document.write(hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun)
-</script>
+}
+  </script>
 <span/>
 <script type="text/javascript">
 now = new Date();
