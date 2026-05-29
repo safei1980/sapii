@@ -12,7 +12,7 @@ var hariarray=new Array("Minggu","Senin",
 "Selasa","Rabu","Kamis","Jum'at","Sabtu")
 var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember")
 document.write(hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun)
-} 
+
 var currentTime = new Date()
   var hours = currentTime.getHours()
   var minutes = currentTime.getMinutes()
