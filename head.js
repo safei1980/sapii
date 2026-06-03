@@ -1,3 +1,4 @@
+<script type='text/javascript'>
 function date_time(id)
 {
 now = new Date();
@@ -12,23 +13,13 @@ var hariarray=new Array("Minggu","Senin",
 "Selasa","Rabu","Kamis","Jum'at","Sabtu")
 var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember")
 document.write(hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun)
-
-var currentTime = new Date()
-  var hours = currentTime.getHours()
-  var minutes = currentTime.getMinutes()
-
-  var suffix = "WIT";
-  if (hours >= 12) {
-  suffix = "WIB";
-  hours = hours - 12;
-  }
-  if (hours == 0) {
-  hours = 12;
-  }
-
-  if (minutes < 10)
-  minutes = "0" + minutes
-
-  document.write("" + hours + ":" + minutes + " " + suffix + "")
-
-}
+</script>
+<span/>
+<script type="text/javascript">
+now = new Date();
+if (now.getTimezoneOffset() == 0) (a=now.getTime() + ( 7 *60*60*1000))
+else (a=now.getTime());
+now.setTime(a);
+document.write("" + ((now.getHours() < 10) ? "0" : "") + now.getHours() + ":" + ((now.getMinutes() < 10)? "0" : "") + now.getMinutes() + (" WIB "))
+//-->
+</script>
