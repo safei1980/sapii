@@ -1,4 +1,3 @@
-<script type='text/javascript'>
 function tampol()
 {
 now = new Date();
@@ -14,4 +13,4 @@ var hariarray=new Array("Minggu","Senin",
 var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember")
 document.write(hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun)
  }  
-</script>
+
