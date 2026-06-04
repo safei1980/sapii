@@ -1,4 +1,4 @@
-function date_time()
+function date_time(id)
 {
     var a_p = "";
     var today = new Date();
