@@ -7,7 +7,7 @@ var currentTime = new Date()
 
   var suffix = "WIB";
   if (hours <= 12) {
-  suffix = "WIB";
+  suffix = "WIT";
   hours = hours - 12;
   }
   if (hours == 0) {
