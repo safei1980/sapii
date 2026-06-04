@@ -1,4 +1,4 @@
-function tampol()
+function tampol(id)
 {
 now = new Date();
 if (now.getTimezoneOffset() == 0) (a=now.getTime() + ( 7 *60*60*1000))
