@@ -3,7 +3,7 @@
 .slider-rotator-container {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 120px;
     margin: 0 auto;
     overflow: hidden;
     box-sizing: border-box;
@@ -40,9 +40,9 @@
 
 .slider-rotator-caption {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
     background: rgba(0, 0, 0, 0.6);
     color: #ffffff;
     padding: 15px;
