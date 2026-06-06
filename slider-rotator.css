@@ -1,0 +1,125 @@
+
+/* Main wrapper container */
+.slider-rotator-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* The moving track holding all slides */
+.slider-rotator-track {
+    display: flex;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+/* Individual slide item */
+.slider-rotator-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Responsive image handling */
+.slider-rotator-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* ==========================================================================
+   Slide Content & Captions
+   ========================================================================== */
+
+.slider-rotator-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: sans-serif;
+}
+
+.slider-rotator-caption h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+}
+
+.slider-rotator-caption p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* ==========================================================================
+   Navigation Controls (Arrows)
+   ========================================================================== */
+
+.slider-rotator-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+.slider-rotator-arrow:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.slider-rotator-arrow-prev {
+    left: 15px;
+}
+
+.slider-rotator-arrow-next {
+    right: 15px;
+}
+
+/* ==========================================================================
+   Pagination Indicators (Dots)
+   ========================================================================== */
+
+.slider-rotator-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.slider-rotator-dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slider-rotator-dot.is-active,
+.slider-rotator-dot:hover {
+    background: #ffffff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
