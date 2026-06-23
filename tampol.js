@@ -12,16 +12,12 @@ function tampol(text)
 
 	if (daym < 10)
 		daym = "0" + daym;
-	
-        
-	now = new Date();
+	       
+now = new Date();
 if (now.getTimezoneOffset() == 0) (a=now.getTime() + ( 7 *60*60*1000))
 else (a=now.getTime());
 now.setTime(a);
-	document.write(dayarray[day] + ", " + daym + " " + montharray[month] + " " + year);
+document.write(dayarray[day] + ", " + daym + " " + montharray[month] + " " + year);
 document.write("" + ((now.getHours() < 10) ? "0" : "") + now.getHours() + ":" + ((now.getMinutes() < 10)? "0" : "") + now.getMinutes() + (" WIB "))
 }
-	//-->
-
-}
-
+	
