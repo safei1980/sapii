@@ -1,7 +1,7 @@
 function tampol(text)
 {
 	var dayarray = new Array("Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu");
-	var montharray = new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
+	var montharray = new Array("01","02","03","04","05","06","07","08","09","10","11","12");
 
 	var kursusblog = new Date();
 
@@ -12,12 +12,25 @@ function tampol(text)
 
 	if (daym < 10)
 		daym = "0" + daym;
-	       
-now = new Date();
-if (now.getTimezoneOffset() == 0) (a=now.getTime() + ( 7 *60*60*1000))
-else (a=now.getTime());
-now.setTime(a);
-document.write(dayarray[day] + ", " + daym + " " + montharray[month] + " " + year);
-document.write("" + ((now.getHours() < 10) ? "0" : "") + now.getHours() + ":" + ((now.getMinutes() < 10)? "0" : "") + now.getMinutes() + (" WIB "))
-}
 	
+document.write('<span>');
+if (standardstyling) document.write('');   
+var currentTime = new Date()
+var hours = currentTime.getHours()
+var minutes = currentTime.getMinutes()
+
+  var suffix = "WIB";
+  if (hours <= 12) {
+  suffix = "WIB";
+  hours = hours - 12;
+  }
+  if (hours == 0) {
+  hours = 12;
+  }
+
+  if (minutes < 10)
+  minutes = "0" + minutes
+if (showpostdate == true) 
+ document.write(dayarray[day] + ", " + daym + "/" + montharray[month] + "/" + year+" " + hours + ":" + minutes + " " + suffix + "");
+document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);
+}
