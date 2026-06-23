@@ -13,8 +13,6 @@ function tampol(text)
 	if (daym < 10)
 		daym = "0" + daym;
 	
-document.write('<span>');
-if (standardstyling) document.write('');   
 var currentTime = new Date()
 var hours = currentTime.getHours()
 var minutes = currentTime.getMinutes()
