@@ -12,7 +12,7 @@ function tampol(id)
 	if (daym < 10)
 		daym = "0" + daym;
 	
-        document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);
+       
 }
 {
 var currentTime = new Date()
@@ -30,5 +30,6 @@ var currentTime = new Date()
 
   if (minutes < 10)
   minutes = "0" + minutes
+ document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);
   document.write("" + hours + ":" + minutes + " " + suffix + "")
 }
