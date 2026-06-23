@@ -1,35 +1,37 @@
+
+<div id="clock"></div>
+<script type="text/javascript">
+<!--
 function tampol(id)
 {
+    var a_p = "";
+    var today = new Date();
+    var curr_hour = today.getHours();
+    var curr_minute = today.getMinutes();
+    var curr_second = today.getSeconds();
+    if (curr_hour < 12) {
+        a_p = "AM";
+    } else {
+        a_p = "PM";
+    }
+    if (curr_hour == 0) {
+        curr_hour = 12;
+    }
+    if (curr_hour > 12) {
+        curr_hour = curr_hour - 12;
+    }
+    curr_hour = checkTime(curr_hour);
+    curr_minute = checkTime(curr_minute);
+    curr_second = checkTime(curr_second);
+ document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+    }
 
-	var dayarray = new Array("Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu");
-	var montharray = new Array("01","02","03","04","05","06","07","08","09","10","11","12");
-	var kursusblog = new Date();
-	var day = kursusblog.getDay();
-	var month = kursusblog.getMonth();
-	var daym = kursusblog.getDate();
-	var year = kursusblog.getFullYear();
-
-	if (daym < 10)
-		daym = "0" + daym;
-	
-       
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
 }
-{
-var currentTime = new Date()
-  var hours = currentTime.getHours()
-  var minutes = currentTime.getMinutes()
-
-  var suffix = "WIB";
-  if (hours >= 12) {
-  suffix = "WIB";
-  hours = hours - 12;
-  }
-  if (hours == 0) {
-  hours = 12;
-  }
-
-  if (minutes < 10)
-  minutes = "0" + minutes
- document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);
-  document.write("" + hours + ":" + minutes + " " + suffix + "")
-}
+setInterval(showTime, 500);
+//-->
+</script>
