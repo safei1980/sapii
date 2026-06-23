@@ -29,7 +29,7 @@ var minutes = currentTime.getMinutes()
   minutes = "0" + minutes
 	
 document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);
-document.write("<b>" + hours + ":" + minutes + " " + suffix + "</b>")</span>
+document.write("<b>" + hours + ":" + minutes + " " + suffix + "</b>")
 }
 //-->
 </script>
