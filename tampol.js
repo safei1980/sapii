@@ -11,6 +11,6 @@ var tanggal= now.getDate ()
 var hariarray=new Array("Minggu","Senin",
 "Selasa","Rabu","Kamis","Jum'at","Sabtu")
 var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember")
-document.write(hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun)
- }  
+  document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);
+}
 
