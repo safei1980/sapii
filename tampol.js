@@ -13,12 +13,22 @@ function tampol(id)
 
 	if (daym < 10)
 		daym = "0" + daym;
-	
-now = new Date();
-if (now.getTimezoneOffset() == 0) (a=now.getTime() + ( 7 *60*60*1000))
-else (a=now.getTime());
-now.setTime(a);
-document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);
-document.write("" + ((now.getHours() < 10) ? "0" : "") + now.getHours() + ":" + ((now.getMinutes() < 10)? "0" : "") + now.getMinutes() + (" WIB "))
 
+	var currentTime = new Date()
+  var hours = currentTime.getHours()
+  var minutes = currentTime.getMinutes()
+
+  var suffix = "WIB";
+  if (hours <= 12) {
+  suffix = "WIT";
+  hours = hours - 12;
+  }
+  if (hours == 0) {
+  hours = 12;
+  }
+
+  if (minutes < 10)
+  minutes = "0" + minutes
+document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);
+document.write("" + hours + ":" + minutes + " " + suffix + "")
 }
