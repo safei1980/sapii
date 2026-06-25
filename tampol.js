@@ -14,7 +14,6 @@ function tampol(id)
 	if (daym < 10)
 		daym = "0" + daym;
 	
-
 now = new Date();
 if (now.getTimezoneOffset() == 0) (a=now.getTime() + ( 7 *60*60*1000))
 else (a=now.getTime());
