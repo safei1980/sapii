@@ -18,7 +18,7 @@ function tampol(text)
   var hours = currentTime.getHours()
   var minutes = currentTime.getMinutes()
 
-  var suffix = "WIB";
+	var suffix = "WIB";
   if (hours <= 12) {
   suffix = "WIT";
   hours = hours - 12;
