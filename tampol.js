@@ -26,7 +26,6 @@ function tampol(id)
   if (hours == 0) {
   hours = 12;
   }
-
   if (minutes < 10)
   minutes = "0" + minutes
 document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);
