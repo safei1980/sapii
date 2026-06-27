@@ -30,8 +30,8 @@ function tampol(text)
   if (minutes < 10)
   minutes = "0" + minutes
 document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);
-document.write("<div style='padding-left:5px;>");
+document.write("<span style='padding-left:5px;>");
 document.write("" + hours + ":" + minutes + " " + suffix + "")
-document.write("</div>");
+document.write("</span>");
 }
 
