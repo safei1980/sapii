@@ -31,6 +31,6 @@ function tampol(text)
   minutes = "0" + minutes
 	  
  <!-- document.write(dayarray[day] + ", " + daym + " " + montharray[month] + " " + year+"  <b>" + hours + ":" + minutes + " " + suffix + "</b>");
-  document.write("<b>"dayarray[day] + ", " + daym + "/" + montharray[month] + "/" + year+" " + hours + ":" + minutes + " " + suffix + "</b>");
+  document.write(dayarray[day] + ", " + daym + "/" + montharray[month] + "/" + year+" " + hours + ":" + minutes + " " + suffix + "");
 }
 
