@@ -21,7 +21,7 @@ function tampol(text)
 	var suffix = "WIB";
   if (hours <= 12) {
   suffix = "WIT";
-  hours = hours - 12;
+  hours = hours  - 12;
   }
 
 	if (hours == 0) {
@@ -29,7 +29,7 @@ function tampol(text)
   }
   if (minutes < 10)
   minutes = "0" + minutes
-   document.write(dayarray[day] + ", " + daym + " " + montharray[month] + " " + year+"<b> " + hours + ":" + minutes + " " + suffix + "</b>");
+   document.write(dayarray[day] + ", " + daym + " " + montharray[month] + " " + year+"  <b>" + hours + ":" + minutes + " " + suffix + "</b>");
 <!--document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);    document.write("" + hours + ":" + minutes + " " + suffix + "")
 }
 
