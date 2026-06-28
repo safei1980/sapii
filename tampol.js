@@ -29,7 +29,7 @@ function tampol(text)
   }
   if (minutes < 10)
   minutes = "0" + minutes
-   document.write(dayarray[day] + ", " + daym + " " + montharray[month] + " " + year+" " + hours + ":" + minutes + " " + suffix + "");
+   document.write(dayarray[day] + ", " + daym + " " + montharray[month] + " " + year+"<b> " + hours + ":" + minutes + " " + suffix + "</b>");
 <!--document.write(dayarray[day] + ", " + daym+"/"+ montharray[month]+"/"+year);    document.write("" + hours + ":" + minutes + " " + suffix + "")
 }
 
